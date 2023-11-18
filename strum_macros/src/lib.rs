@@ -690,7 +690,7 @@ pub fn enum_properties(input: proc_macro::TokenStream) -> proc_macro::TokenStrea
 /// // Bring trait into scope
 /// use std::str::FromStr;
 /// use strum::{IntoEnumIterator, EnumMessage};
-/// use strum_macros::{EnumDiscriminants, EnumIter, EnumString, EnumMessage};
+/// use strum_macros::{EnumDiscriminants, EnumIter, EnumString};
 ///
 /// #[derive(Debug)]
 /// struct NonDefault;
@@ -828,7 +828,6 @@ pub fn enum_count(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
 /// 
 /// ```
 /// use strum::EnumDeref;
-/// use strum_macros::EnumDeref;
 /// 
 /// #[derive(EnumDeref)]
 /// #[strum_deref_target([u32])]
@@ -856,7 +855,6 @@ pub fn enum_count(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
 ///
 /// ```
 /// use strum::EnumDeref;
-/// use strum_macros::EnumDeref;
 /// 
 /// #[derive(EnumDeref)]
 /// #[strum_deref_target(dyn core::fmt::Display)]
