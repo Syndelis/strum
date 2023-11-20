@@ -46,6 +46,7 @@ Strum has implemented the following macros:
 | [EnumMessage] | Add a verbose message to an enum variant. |
 | [EnumDiscriminants] | Generate a new type with only the discriminant names. |
 | [EnumCount] | Add a constant `usize` equal to the number of variants. |
+| [EnumDeref] | Implements `Deref` and `DeretMut` for a new-type enum based on a common `Target` |
 
 # Contributing
 
@@ -80,3 +81,4 @@ Strumming is also a very whimsical motion, much like writing Rust code.
 [EnumDiscriminants]: https://docs.rs/strum_macros/0.25/strum_macros/derive.EnumDiscriminants.html
 [EnumCount]: https://docs.rs/strum_macros/0.25/strum_macros/derive.EnumCount.html
 [FromRepr]: https://docs.rs/strum_macros/0.25/strum_macros/derive.FromRepr.html
+[EnumDeref]: https://docs.rs/strum_macros/0.25/strum_macros/derive.EnumDeref.html
